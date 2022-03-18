@@ -1,6 +1,7 @@
 <template>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="background"></div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3b3b3;">
       <a class="navbar-brand" href="#">Turbo Kebab</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,5 +45,28 @@ export default {
 <style>
 a[href="/login"] {
   border: 2px solid black;
+}
+h1, .navbar-brand {
+  font-family: Algerian;
+  text-shadow: 2px 2px 8px #000000;
+  -webkit-text-stroke: 0.5px red;
+  color: white;
+}
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(./assets/turbo-kebab-beautiful.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
 }
 </style>

@@ -26,7 +26,7 @@
             <input type="password" class="form-control form-control-lg" placeholder="Password"/>
           </div>
 
-          <router-link class="w-100 btn btn-lg btn-primary" type="submit" to="/signin">Sign up</router-link>
+          <router-link class="w-100 btn btn-lg btn-primary" type="submit" to="/signin" style="background-color: red; border: red">Sign up</router-link>
         </form>
       </div>
     </div>
@@ -42,19 +42,18 @@ export default {
 </script>
 
 <style>
+
 .signup {
+  padding: 2%;
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: center;
-  background-color: #f6f6f6;
 }
 .form-signin {
   width: 100%;
   max-width: 450px;
   margin: auto;
 }
-label {
+label. {
   font-weight: 600;
 }
 </style>

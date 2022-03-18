@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-body">
           <form>
-            <h2 class="h3 mb-3 fw-normal text-center">Please sign in</h2>
+            <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
 
             <div class="form-group">
               <label>Email address</label>
@@ -20,7 +20,7 @@
               <label><input type="checkbox" value="remember-me"> Remember me</label>
             </div>
 
-            <router-link class="w-100 btn btn-lg btn-primary" type="submit" to="/signup">Sign in</router-link>
+            <router-link class="w-100 btn btn-lg btn-primary" type="submit" to="/signup" style="background-color: red; border: red">Sign in</router-link>
           </form>
         </div>
       </div>
@@ -36,12 +36,11 @@ export default {
 </script>
 
 <style>
+
 .login {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 2%;
   align-items: center;
-  background-color: #f6f6f6;
 }
 .form-signin {
   width: 100%;

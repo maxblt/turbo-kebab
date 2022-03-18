@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <h1>Testttt</h1>
-    <carousel :items-to-show="1">
-      <slide v-for="slide in slides" :key="slide">
-        <img :src="slide.imageUrl" />
-      </slide>
+    <h1>Bienvenue !</h1>
+  <carousel :items-to-show="1">
+    <slide v-for="slide in slides" :key="slide">
+      <img :src="slide.imageUrl" />
+    </slide>
 
-      <template #addons>
-        <navigation />
-        <pagination />
-      </template>
-    </carousel>
+    <template #addons>
+      <navigation />
+      <pagination />
+    </template>
+  </carousel>
   </div>
 </template>
 
@@ -30,20 +30,20 @@ export default {
   data: () => ({
     slides: [
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/800px-Lula_kebab_2.jpg',
-        caption: 'Photo by 2'
+        imageUrl: 'https://bilder.t-online.de/b/87/28/28/82/id_87282882/tid_da/doener-kebab-diese-berliner-spezialitaet-ist-auf-der-ganzen-welt-beruehmt-symbolbild-.jpg',
+        caption: 'Our delicious kebab'
       },
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/800px-Lula_kebab_2.jpg',
-        caption: 'Photo by 2'
+        imageUrl: 'https://media.gettyimages.com/photos/kebab-picture-id182199049?s=612x612',
+        caption: 'Tasty close-up'
       },
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/800px-Lula_kebab_2.jpg',
-        caption: 'Photo by 3'
+        imageUrl: 'https://media.istockphoto.com/photos/professional-female-cook-with-grilled-meat-on-spit-for-kebab-picture-id628803418',
+        caption: 'Our chef'
       },
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/800px-Lula_kebab_2.jpg',
-        caption: 'Photo by 4'
+        imageUrl: 'https://www.canstockphoto.com/zoom/?height=367&width=598&id=86549467&_ts=1647575047714&scale=1.3377926421404682&left=40&top=8',
+        caption: 'Incredible service'
       }
     ]
   }),
@@ -53,6 +53,14 @@ export default {
 
 <style>
 .home {
+  margin: auto;
   padding: 2%;
+  align-items: center;
+  text-align: center;
+}
+
+section img {
+  border : 10px white solid;
+  height: 400px;
 }
 </style>
