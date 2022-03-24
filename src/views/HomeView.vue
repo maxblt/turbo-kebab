@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Bienvenue !</h1>
+    <h1>Welcome !</h1>
   <carousel :items-to-show="1">
     <slide v-for="slide in slides" :key="slide">
       <img :src="slide.imageUrl" />
