@@ -7,23 +7,23 @@
           <form @submit.prevent="getFormValues">
             <div class="input-container">
               <input id="1" type="checkbox" name="1" value="Salade" v-model="checkedNames">
-              <label for="1"><span>Salade</span></label>
+              <label for="1"><span>Lettuce</span></label>
             </div>
             <div class="input-container">
               <input id="2" type="checkbox" name="2" value="Tomates" v-model="checkedNames">
-              <label for="2"><span>Tomates</span></label>
+              <label for="2"><span>Tomatoes</span></label>
             </div>
             <div class="input-container">
               <input id="3" type="checkbox" name="3" value="Oignons" v-model="checkedNames">
-              <label for="3"><span>Oignons</span></label>
+              <label for="3"><span>Onions</span></label>
             </div>
             <div class="input-container">
               <input id="4" type="checkbox" name="4" value="Concombre" v-model="checkedNames">
-              <label for="4"><span>Concombre</span></label>
+              <label for="4"><span>Cucumber</span></label>
             </div>
             <div class="input-container">
               <input id="5" type="checkbox" name="5" value="Ail" v-model="checkedNames">
-              <label for="5"><span>Ail</span></label>
+              <label for="5"><span>Garlic</span></label>
             </div>
             <div class="input-container">
               <input id="6" type="checkbox" name="6" value="Merguez" v-model="checkedNames">
@@ -35,10 +35,10 @@
             </div>
             <div class="input-container">
               <input id="8" type="checkbox" name="8" value="Frites" v-model="checkedNames">
-              <label for="8"><span>Frites</span></label>
+              <label for="8"><span>Fries</span></label>
             </div>
             <div class="slidecontainer">
-              Petit <input type="range" min="1" max="3" value="1" class="slider" id="myRange"> Grand
+              Small <input type="range" min="1" max="3" value="1" class="slider" id="myRange"> Large
             </div>
             <div class="row">
               <div class="col">
