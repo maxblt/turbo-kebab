@@ -4,7 +4,7 @@
     <div class="card">
       <div class="card-body">
         <form>
-          <h2 class="h3 mb-3 fw-normal text-center">Please sign up</h2>
+          <h1 class="h3 mb-3 fw-normal text-center">Please sign up</h1>
 
           <div class="form-group">
             <label>First Name</label>
