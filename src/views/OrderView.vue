@@ -4,37 +4,37 @@
     <main class="form-order">
       <div class="card">
         <div class="card-body">
-          <form action="">
+          <form @submit.prevent="getFormValues">
             <div class="input-container">
-              <input id="1" type="checkbox" name="1" value="1">
+              <input id="1" type="checkbox" name="1" value="Salade" v-model="checkedNames">
               <label for="1"><span>Salade</span></label>
             </div>
             <div class="input-container">
-              <input id="2" type="checkbox" name="2" value="2">
+              <input id="2" type="checkbox" name="2" value="Tomates" v-model="checkedNames">
               <label for="2"><span>Tomates</span></label>
             </div>
             <div class="input-container">
-              <input id="3" type="checkbox" name="3" value="3">
+              <input id="3" type="checkbox" name="3" value="Oignons" v-model="checkedNames">
               <label for="3"><span>Oignons</span></label>
             </div>
             <div class="input-container">
-              <input id="4" type="checkbox" name="4" value="4">
+              <input id="4" type="checkbox" name="4" value="Concombre" v-model="checkedNames">
               <label for="4"><span>Concombre</span></label>
             </div>
             <div class="input-container">
-              <input id="5" type="checkbox" name="5" value="5">
+              <input id="5" type="checkbox" name="5" value="Ail" v-model="checkedNames">
               <label for="5"><span>Ail</span></label>
             </div>
             <div class="input-container">
-              <input id="6" type="checkbox" name="6" value="6">
+              <input id="6" type="checkbox" name="6" value="Merguez" v-model="checkedNames">
               <label for="6"><span>Merguez</span></label>
             </div>
             <div class="input-container">
-              <input id="7" type="checkbox" name="7" value="7">
+              <input id="7" type="checkbox" name="7" value="Nuggets" v-model="checkedNames">
               <label for="7"><span>Nuggets</span></label>
             </div>
             <div class="input-container">
-              <input id="8" type="checkbox" name="8" value="8">
+              <input id="8" type="checkbox" name="8" value="Frites" v-model="checkedNames">
               <label for="8"><span>Frites</span></label>
             </div>
             <div class="slidecontainer">
@@ -68,6 +68,26 @@
             <input type="submit" value="Order now !">
           </form>
         </div>
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Food</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Mail</th>
+            <th scope="col">Collect option</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>{{checkedNames}}</td>
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+            <td>{{mail}}</td>
+            <td>{{collect}}</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   </div>
@@ -76,6 +96,24 @@
 <script>
 export default {
   name: 'OrderView',
+  data: function(){
+    return {
+      name: "",
+      surname: "",
+      mail: "",
+      collect: "",
+      checkedNames: []
+    }
+  },
+  methods: {
+    getFormValues(submitEvent) {
+      this.name = submitEvent.target.elements.name.value
+      this.surname = submitEvent.target.elements.surname.value
+      this.mail = submitEvent.target.elements.mail.value
+      this.collect = submitEvent.target.elements.collect.value
+      this.checkedName = submitEvent.target.elements.checkedNames.value
+    }
+  }
 }
 </script>
 
